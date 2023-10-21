@@ -376,7 +376,12 @@ static flexcan_isr_t s_flexcanIsr;
 /*******************************************************************************
  * Code
  ******************************************************************************/
-//First requirement implementation (Module De-Initialization)
+//SWS_Can_00223: Can Init
+void Can_Init(const Can_ConfigType* Config)
+{
+	//To do.... SWS_CAN_00250
+}
+//SWS_Can_91002: First requirement implementation (Module De-Initialization)
 void Can_DeInit(void)
 {
 	//To do... conocimiento en progreso

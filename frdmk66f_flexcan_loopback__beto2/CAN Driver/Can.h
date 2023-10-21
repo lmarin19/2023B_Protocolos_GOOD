@@ -270,6 +270,11 @@ enum
 };
 
 /*! @brief FlexCAN frame format. */
+typedef struct EstructuraLuis
+{
+	char doomie;
+} Can_ConfigType;
+/*! @brief FlexCAN frame format. */
 typedef enum _flexcan_frame_format
 {
     kFLEXCAN_FrameFormatStandard = 0x0U, /*!< Standard frame format attribute. */
@@ -1035,9 +1040,17 @@ extern "C" {
  * @{
  */
 /*!
+ * @brief Inicializa el controlador.
+ *
+ * SWS_CAN_00223
+ *
+ * @param base void esta función no necesita ningún parámetro.
+ */
+void Can_Init(const Can_ConfigType* Config);
+/*!
  * @brief Vuelve a poner el controlador en su estado default.
  *
- * Ve a lo de arriba
+ * SWS_CAN_91002
  *
  * @param base void esta función no necesita ningún parámetro.
  */
