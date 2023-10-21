@@ -376,6 +376,13 @@ static flexcan_isr_t s_flexcanIsr;
 /*******************************************************************************
  * Code
  ******************************************************************************/
+//First requirement implementation (Module De-Initialization)
+void Can_DeInit(void)
+{
+	//To do... conocimiento en progreso
+}
+
+
 /*!
  * brief Get the FlexCAN instance from peripheral base address.
  *

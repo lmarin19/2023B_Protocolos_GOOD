@@ -1034,6 +1034,14 @@ extern "C" {
  * @name Initialization and deinitialization
  * @{
  */
+/*!
+ * @brief Vuelve a poner el controlador en su estado default.
+ *
+ * Ve a lo de arriba
+ *
+ * @param base void esta función no necesita ningún parámetro.
+ */
+void Can_DeInit(void);
 
 /*!
  * @brief Enter FlexCAN Freeze Mode.
