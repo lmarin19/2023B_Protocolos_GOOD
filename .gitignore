@@ -52,3 +52,4 @@ Mkfile.old
 dkms.conf
 /.metadata/
 frdmk66f_flexcan_loopback__beto2/Debug/
+*.log
